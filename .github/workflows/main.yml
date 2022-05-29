@@ -1,4 +1,4 @@
-name: GettingStarted_Container_Workflow
+name: GettingStarted02_Container_Workflow
 
 jobs:
     build-and-deploy:
