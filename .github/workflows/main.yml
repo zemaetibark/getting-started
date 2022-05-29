@@ -1,3 +1,5 @@
+on: [push]
+
 name: GettingStarted02_Container_Workflow
 
 jobs:
