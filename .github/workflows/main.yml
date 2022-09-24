@@ -33,10 +33,10 @@ jobs:
             registry-login-server: ${{ secrets.REGISTRY_LOGIN_SERVER }}
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
-            azure-file-volume-account-key: 'kGjbVM00x7ur5p9bVKiFK+DZI+NMu2Te98v+r2gPA5JthyQFoHSLopVqiD/VBM2th7OSJxrGuMaR+AStODVWlg=='
-            azure-file-volume-account-name: 'dockeropdracht'
-            azure-file-volume-mount-path: '/etc/todos'
-            azure-file-volume-share-name: 'todolijst'
+            azure-file-volume-account-key: ${{ secrets.FILESHARE_ACCKEY }}
+            azure-file-volume-account-name: ${{ secrets.FILESHARE_ACCNAME }}
+            azure-file-volume-mount-path: ${{ secrets.FILESHARE_PATH }}
+            azure-file-volume-share-name: ${{ secrets.FILESHARE_NAME }}
             name: getting-started-github
             location: 'west europe'
             ports: '3000'
